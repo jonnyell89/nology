@@ -1,37 +1,27 @@
-@media only screen and (max-width: 576px) {
-  .name {
-    display: flex;
-  }
-  .welcome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
-    background-color: blue;
-  }
-  .intro {
-    background-color: red;
-    border: 2px solid black;
-    padding: 30px;
-    border-radius: 10px;
-    width: 90%;
-  }
+header {
+  display: none;
 }
-@media only screen and (min-width: 577px) and (max-width: 1280px) {
-  .welcome {
+@media only screen and (min-width: 361px) and (max-width: 1280px) {
+  header {
+    display: block;
+    background-color: darkslategray;
+  }
+  header .header-bar {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    padding: 30px;
-    background-color: orange;
   }
-  .intro {
-    background-color: orange;
-    border: 2px solid black;
-    padding: 30px;
-    border-radius: 10px;
-    width: 90%;
+  header .name {
+    align-items: flex-start;
+    font-weight: bold;
   }
+  header .links {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.grid {
+  display: grid;
 }

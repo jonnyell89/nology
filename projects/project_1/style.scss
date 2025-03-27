@@ -1,47 +1,31 @@
 @use "./media_queries.scss";
 
-@include media_queries.mobile {
-  .name {
-    display: flex;
-  }
+header {
+  display: none;
 
-  .links {
-    display: flex;
-  }
+  @include media_queries.desktop {
+    display: block;
+    background-color: darkslategray;
 
-  .welcome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
-    background-color: blue;
-  }
+    .header-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-  .intro {
-    background-color: red;
-    border: 2px solid black;
-    padding: 30px;
-    border-radius: 10px;
-    width: 90%;
+    .name {
+      align-items: flex-start;
+      font-weight: bold;
+    }
+
+    .links {
+      display: flex;
+      align-items: flex-end;
+    }
   }
 }
 
-@include media_queries.desktop {
-  .welcome {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
-    background-color: orange;
-  }
-
-  .intro {
-    background-color: orange;
-    border: 2px solid black;
-    padding: 30px;
-    border-radius: 10px;
-    width: 90%;
-  }
+.grid {
+  display: grid;
 }
