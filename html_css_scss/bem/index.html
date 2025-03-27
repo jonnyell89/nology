@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>BEM Convention</title>
+
+    <!-- Block__Element--Modifier -->
+    <!-- BEM is a class naming convention -->
+  </head>
+  <body>
+    <!-- Block -->
+    <main>
+      <div class="container">
+        <!-- Elements -->
+        <h2 class="container__heading">Heading for the Main Section</h2>
+        <p class="container__paragraph--extra-padding-left">
+          This is the first paragraph.
+        </p>
+        <p class="container__paragraph">This is the second paragraph.</p>
+      </div>
+      <div class="container container--border-red">
+        <!-- Elements -->
+        <h2 class="container__heading">Heading for the Main Section</h2>
+        <p class="container__paragraph--extra-padding-left">
+          This is the first paragraph.
+        </p>
+        <p class="container__paragraph">This is the second paragraph.</p>
+        <article class="container__article">
+          <p class="container__article--blue"></p>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

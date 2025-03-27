@@ -1,0 +1,52 @@
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
+* {
+  margin: 0px;
+}
+
+.container {
+  border: 10px solid rgb(196, 231, 212);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 12px;
+}
+.container__btn {
+  color: salmon;
+  min-height: 30px;
+}
+.container__btn--small {
+  font-size: 8px;
+}
+.container__btn--large {
+  font-size: 18px;
+}
+.container__btn--x-large {
+  font-size: 2rem;
+}
+.container__btn--urgent {
+  background-color: red;
+  border: 1px solid white;
+  border-radius: 11px;
+  color: white;
+}
+.container__btn--grey-font {
+  color: grey;
+}
+.container__btn--grey-border {
+  border-color: grey;
+  border-radius: 11px;
+}
+.container__btn--flashy {
+  color: yellow;
+  background-color: hotpink;
+  border-radius: 11px;
+}
+
+nav {
+  border: 10px solid rgb(196, 231, 212);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 12px;
+}

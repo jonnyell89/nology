@@ -1,0 +1,39 @@
+@use "./palette.scss";
+@use "./typography.scss";
+@use "./mixins";
+
+$wenge: #63585eff;
+$default-btn-border-radius: 11px;
+
+.container {
+  @include mixins.flex-container-style;
+
+  &__btn {
+    color: salmon;
+    min-height: 30px;
+
+    @include mixins.sizing-modifiers(8px, 18px);
+
+    &--urgent {
+      background-color: red;
+      border: 1px solid white;
+      border-radius: $default-btn-border-radius;
+      color: white;
+    }
+
+    &--grey-font {
+      color: grey;
+    }
+
+    &--grey-border {
+      border-color: grey;
+      border-radius: $default-btn-border-radius;
+    }
+
+    &--flashy {
+      color: yellow;
+      background-color: hotpink;
+      border-radius: $default-btn-border-radius;
+    }
+  }
+}

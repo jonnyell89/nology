@@ -1,0 +1,58 @@
+@use "./media-queries.scss";
+
+button {
+  @include media-queries.phone {
+    width: 100px;
+    background-color: red;
+  }
+
+  @include media-queries.tablet {
+    width: 250px;
+    background-color: yellow;
+  }
+
+  @include media-queries.laptop {
+    width: 400px;
+    background-color: blue;
+  }
+
+  @include media-queries.monitor {
+    width: 500px;
+    background-color: green;
+  }
+
+  background-color: salmon;
+}
+
+.gallery {
+  display: grid;
+
+  @include media-queries.phone {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @include media-queries.tablet {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  @include media-queries.laptop {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+
+    img {
+      width: 80%;
+    }
+  }
+}

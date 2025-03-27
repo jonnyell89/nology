@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <!-- Frontend Development -->
+
+  <!-- What information needs to be captured? -->
+  <!-- How is the data labelled? -->
+  <!-- How is the data sent to the backend / database / server? -->
+  <!-- How is the form validated? -->
+  <body>
+    <form
+      action="https://formsubmit.co/your@email.com"
+      method="POST"
+      style="display: flex; flex-direction: column"
+    >
+      <div>
+        <!-- label for connects the label with the input id -->
+        <label for="firstName">First Name: </label>
+        <input id="firstName" type="text" />
+      </div>
+      <div>
+        <label for="lastName">Last Name: </label>
+        <input id="lastName" type="text" />
+      </div>
+      <div>
+        <label for="phone">Phone Number: </label>
+        <input id="phone" type="number" />
+      </div>
+      <div>
+        <label for="country">Country: </label>
+        <select name="" id="">
+          <option value="">England</option>
+          <option value="">Scotland</option>
+          <option value="">Wales</option>
+          <option value="">Northern Ireland</option>
+        </select>
+      </div>
+      <div>
+        <label for="message">Message: </label>
+        <textarea
+          name=""
+          id="message"
+          placeholder="Type your message here..."
+        ></textarea>
+      </div>
+
+      <!-- Refreshes the web page and tries to submit the form information -->
+      <button>Submit</button>
+      <!-- <input type="submit" /> -->
+    </form>
+  </body>
+</html>

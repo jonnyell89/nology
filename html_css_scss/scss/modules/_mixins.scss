@@ -1,0 +1,25 @@
+@use "./palette.scss";
+@use "./typography.scss";
+
+@mixin flex-container-style {
+  border: 10px solid palette.$nyanza;
+  display: flex;
+  justify-content: space-evenly;
+  padding: typography.$default-padding;
+}
+
+// Passing arguments to mixins
+
+@mixin sizing-modifiers($sm, $lg, $xl: 2rem) {
+  &--small {
+    font-size: $sm;
+  }
+
+  &--large {
+    font-size: $lg;
+  }
+
+  &--x-large {
+    font-size: $xl;
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- . refers to current directory -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>CSS Recap</title>
+  </head>
+  <body>
+    <!-- Inline Styling -->
+    <div class="section">
+      <p style="color: red" class="paragraph">This is the first paragraph.</p>
+
+      <p id="secondParagraph" class="paragraph">
+        This is the second paragraph.
+      </p>
+    </div>
+
+    <p>This is the third paragraph.</p>
+    <p class="paragraph">This is the fourth paragraph.</p>
+
+    <!-- Inline elements take as much space as required and do not create a line break -->
+    <span>This is the first span.</span>
+
+    <!-- Block elements start a new line and take all of the horizontal space and push the next element down to the next line -->
+    <div class="box-3">Box 3</div>
+    <p>This is the fifth paragraph.</p>
+    <span
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error ab
+      velit id quia culpa molestias <span>SPAN</span> qui vitae deserunt facilis
+      cupiditate sit quod, neque modi iusto odio officia voluptatem ipsum.</span
+    >
+    <a href="https://www.somelink.com">Link to website</a>
+    <a href="https://www.google.co.uk/">Google</a>
+
+    <button disabled>CLICK ME</button>
+  </body>
+
+  <style>
+    /* Specificity */
+    /* Internal is less specific than Inline */
+    /* Internal Styling */
+
+    p {
+      text-decoration: underline;
+      color: chartreuse;
+    }
+
+    .paragraph {
+      color: turquoise;
+    }
+
+    .section {
+      border: 4px dashed gold;
+    }
+  </style>
+</html>

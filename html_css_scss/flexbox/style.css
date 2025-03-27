@@ -1,0 +1,43 @@
+/* main {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+} */
+
+main {
+  /* display: flex applies to the children of the main element */
+  display: flex;
+  justify-content: space-around;
+  /* align-items aligns along the y-axis */
+  align-items: center;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-container p {
+  width: 100px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-container p {
+  text-align: center;
+  width: 500px;
+  border: 2px solid black;
+  background-color: turquoise;
+}
+
+.section-container {
+  display: flex;
+  /* Allows elements to wrap and reorganise themselves in an orderly way */
+  flex-wrap: wrap;
+}

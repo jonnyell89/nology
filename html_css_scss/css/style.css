@@ -1,0 +1,54 @@
+/* External Styling */
+/* Internal is less specific than Inline */
+/* Internal will take precedence over External */
+/* Element Selector < Class Selector < ID Selector */
+
+#secondParagraph {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.section .paragraph {
+  font-style: italic;
+}
+
+.section {
+  border: 2px solid salmon;
+}
+
+.section p:last-child {
+  color: brown;
+}
+
+.box-3 {
+  background-color: green;
+  padding: 20px;
+  border: 2px solid brown;
+  margin: 10px;
+}
+
+button:disabled {
+  border: 2px dashed black;
+}
+
+/* Pseudo Classes */
+
+a:visited {
+  color: yellow;
+}
+
+a:link {
+  color: red;
+}
+
+a:hover {
+  cursor: grab;
+}
+
+a:active {
+  color: green;
+}
+
+.box-3:active {
+  background-color: darkmagenta;
+}

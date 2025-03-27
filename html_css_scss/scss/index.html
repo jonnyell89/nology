@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>SCSS or Sass</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a>HOME</a>
+      </div>
+      <div>
+        <a>NEWS</a>
+      </div>
+      <div>
+        <a>ABOUT</a>
+      </div>
+    </nav>
+    <!-- Block__Element--Modifier -->
+    <!-- BEM is a class naming convention -->
+    <div class="container">
+      <button class="container__btn container__btn--small">Standard</button>
+      <button class="container__btn container__btn--urgent">Urgent</button>
+      <button
+        class="container__btn container__btn--large container__btn--grey-font container__btn--grey-border"
+      >
+        Inactive
+      </button>
+      <button
+        class="container__btn container__btn--x-large container__btn--flashy"
+      >
+        CLICK ME
+      </button>
+    </div>
+  </body>
+</html>

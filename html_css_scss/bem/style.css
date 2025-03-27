@@ -1,0 +1,21 @@
+.container {
+    border: 2px solid blue;
+}
+
+.container__heading {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.container__paragraph {
+    font-size: 12px;
+    padding-left: 100px;
+}
+
+.container__paragraph--extra-padding-left {
+
+}
+
+.container container--border-red {
+
+}

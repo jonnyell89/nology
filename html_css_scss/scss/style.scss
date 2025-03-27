@@ -1,0 +1,10 @@
+@use "./modules/mixins";
+@use "./modules/button.scss";
+@use "./modules/palette.scss";
+@use "./modules/typography.scss";
+
+// DRY - DON'T REPEAT YOURSELF
+
+nav {
+  @include mixins.flex-container-style;
+}

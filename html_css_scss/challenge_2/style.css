@@ -1,0 +1,53 @@
+.outer-container {
+  width: 600px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+#card-1 {
+  background-color: lightblue;
+}
+
+#card-2 {
+  background-color: lightcoral;
+}
+
+#card-3 {
+  background-color: lightgreen;
+}
+
+#card-4 {
+  background-color: lightsalmon;
+}
+
+#card-5 {
+  background-color: red;
+}
+
+#card-6 {
+  background-color: grey;
+}
+
+#card-7 {
+  background-color: blue;
+}
+
+#card-8 {
+  background-color: darkblue;
+}
