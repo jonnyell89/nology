@@ -4,93 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Project 1</title>
+    <title>Project 1: Portfolio Website</title>
   </head>
   <body>
     <header>
-      <div class="header-bar">
-        <!-- Left side name -->
-        <h3 class="name">Jonny Ellis</h3>
-        <!-- Right side nav bar -->
-        <nav class="links">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-          </ul>
-          <button class="links__btn">Contact</button>
-        </nav>
-      </div>
+      <nav class="navbar">
+        <div class="navbar__container">
+          <!-- Left side name -->
+          <h3 class="navbar__name">Jonny Ellis</h3>
+          <!-- Right side nav bar -->
+          <div class="navbar__right">
+            <ul class="navbar__menu">
+              <li><a href="#" class="navbar__link">Home</a></li>
+              <li><a href="#" class="navbar__link">About</a></li>
+              <li><a href="#" class="navbar__link">Projects</a></li>
+            </ul>
+            <button class="navbar__btn">Contact</button>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-      <section id="welcome">
-        <div class="intro">
-          <h2>👋Jonny Ellis</h2>
-          <h3>A Junior Software Developer based in the UK.</h3>
+      <section id="intro">
+        <div class="intro__container">
+          <h5 class="intro__name">Hello, my name is Jonny Ellis.</h5>
+          <h2 class="intro__about">
+            A Junior Software Developer based in the UK.
+          </h2>
         </div>
-        <img src="" alt="" />
+        <img class="intro__img" src="" alt="" />
       </section>
-      <section id="introduction">
-        <img src="" alt="" />
-        <h2>About</h2>
-        <p></p>
+      <section id="about">
+        <div class="about__container">
+          <img class="about__img" src="" alt="" />
+          <h2 class="about__head">About</h2>
+          <p class="about__para"></p>
+        </div>
       </section>
       <section id="technical">
-        <h2>Technical Skills</h2>
-        <p></p>
+        <div class="technical__container">
+          <h2 class="technical__head">Technical Skills</h2>
+          <p class="technical__para"></p>
+        </div>
       </section>
       <section id="projects">
-        <h2>Projects</h2>
-        <div class="grid">
-          <div class="project">
-            <img src="" alt="" />
-            <h4>Technology</h4>
-            <h2>Title</h2>
-            <p>About</p>
-            <nav>
-              <button>Code</button>
-              <button>Preview</button>
-            </nav>
-          </div>
-          <div class="project">
-            <img src="" alt="" />
-            <h4>Technology</h4>
-            <h2>Title</h2>
-            <p>About</p>
-            <nav>
-              <button>Code</button>
-              <button>Preview</button>
-            </nav>
-          </div>
-          <div class="project">
-            <img src="" alt="" />
-            <h4>Technology</h4>
-            <h2>Title</h2>
-            <p>About</p>
-            <nav>
-              <button>Code</button>
-              <button>Preview</button>
-            </nav>
-          </div>
-          <div class="project">
-            <img src="" alt="" />
-            <h4>Technology</h4>
-            <h2>Title</h2>
-            <p>About</p>
-            <nav>
-              <button>Code</button>
-              <button>Preview</button>
-            </nav>
+        <div class="projects__container">
+          <h2 class="projects__head">Projects</h2>
+          <div class="projects__grid">
+            <div class="project">
+              <img class="project__img--one" src="" alt="" />
+              <h4 class="project__technology">Technology</h4>
+              <h2 class="project__head">Title</h2>
+              <p class="project__para">About</p>
+              <div class="project__btn__container">
+                <button class="project__btn">Code</button>
+                <button class="project__btn">Preview</button>
+              </div>
+            </div>
+            <div class="project">
+              <img class="project__img--two" src="" alt="" />
+              <h4 class="project__technology">Technology</h4>
+              <h2 class="project__head">Title</h2>
+              <p class="project__para">About</p>
+              <div class="project__btn__container">
+                <button class="project__btn">Code</button>
+                <button class="project__btn">Preview</button>
+              </div>
+            </div>
+            <div class="project">
+              <img class="project__img--three" src="" alt="" />
+              <h4 class="project__technology">Technology</h4>
+              <h2 class="project__head">Title</h2>
+              <p class="project__para">About</p>
+              <div class="project__btn__container">
+                <button class="project__btn">Code</button>
+                <button class="project__btn">Preview</button>
+              </div>
+            </div>
+            <div class="project">
+              <img class="project__img--four" src="" alt="" />
+              <h4 class="project__technology">Technology</h4>
+              <h2 class="project__head">Title</h2>
+              <p class="project__para">About</p>
+              <div class="project__btn__container">
+                <button class="project__btn">Code</button>
+                <button class="project__btn">Preview</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <h4><a href="jonnyell89@gmail.com">jonnyell89@gmail.com</a></h4>
-      <nav>
-        <button>Website</button>
-        <button>LinkedIn</button>
-        <button>CV</button>
+      <nav class="navbar">
+        <div class="navbar__container">
+          <h4 class="navbar__head">
+            <a href="jonnyell89@gmail.com">jonnyell89@gmail.com</a>
+          </h4>
+          <div class="navbar__btns">
+            <button class="navbar__btn">Website</button>
+            <button class="navbar__btn">LinkedIn</button>
+            <button class="navbar__btn">CV</button>
+          </div>
+        </div>
       </nav>
     </footer>
   </body>

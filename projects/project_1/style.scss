@@ -1,27 +1,102 @@
 @use "./media_queries.scss";
 
+$mobile-max-width: 360px;
+$desktop-max-width: 1280px;
+
 header {
-  display: none;
+  @include media_queries.mobile {
+    display: none;
+  }
 
   @include media_queries.desktop {
     display: block;
-    background-color: darkslategray;
+    background-color: white;
+    width: 100%;
 
-    .header-bar {
+    .navbar {
+      background-color: grey;
+      width: 100%;
+      padding: 5px 10px;
+    }
+
+    /* name left, everything else right */
+    .navbar__container {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      max-width: $desktop-max-width;
     }
 
-    .name {
-      align-items: flex-start;
+    .navbar__name {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
       font-weight: bold;
+      color: black;
     }
 
-    .links {
+    .navbar__right {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
+      padding-right: 20px;
+    }
+
+    .navbar__menu {
+      display: flex;
+      list-style: none;
+    }
+
+    .navbar__link {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+    }
+
+    .navbar__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid black;
+      border-radius: 3px;
+      background-color: white;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+
+section.intro {
+  @include media_queries.mobile {
+    display: block;
+    background-color: white;
+    width: 100%;
+
+    .intro__container {
+    }
+
+    .intro__name {
+    }
+
+    .intro__about {
+    }
+  }
+
+  @include media_queries.desktop {
+    display: block;
+    background-color: white;
+    width: 100%;
+
+    .intro__container {
+    }
+
+    .intro__name {
+    }
+
+    .intro__about {
     }
   }
 }
