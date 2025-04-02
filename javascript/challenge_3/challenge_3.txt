@@ -1,0 +1,9 @@
+// ## Challenge: Sum of `n`
+
+// ### MVP:
+
+// Create a for loop that will add all the numbers up to n
+
+// 1. You should create a variable to set the upper limit of your loop
+// 2. Your loop should increment by 1 on each iteration
+// 3. Your loop should print the result of each iteration

@@ -1,0 +1,10 @@
+## Challenge: Tell me the day!
+
+### MVP:
+
+Create a switch block that will log a string for each day of the week.
+
+1. Create a variable called `day`
+1. The switch will be given a number and return the matching days of the week
+1. e.g. if `day = 2`, the switch should print `Today is Tuesday` in the console.
+1. Your switch block should also handle numbers out of range

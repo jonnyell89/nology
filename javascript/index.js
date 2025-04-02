@@ -167,3 +167,66 @@ console.log(!x || !myName || 7 !== "7"); // true
 // true * false && false + true; // 0
 // 10 && 123 && -1 && 3; // 3
 // 10 && 123 && 0 && 3; // 0
+
+// 5. Control Flow
+// The flow of logic through the application.
+// If, Switch, Ternary
+
+// If Statements
+
+// if(expression to evaluate) {
+//     block of code to execute when expression/condition is true
+// } else {
+//     block of code to execute when expression/condition is false
+// }
+
+const correctPassword = "mnbvcxz";
+let input = "zxcvbnm";
+
+if (input === correctPassword) {
+  console.log("WELCOME");
+} else if (input === "") {
+  console.log("Please enter your password");
+} else {
+  console.log("ACCESS DENIED"); // All conditions were false.
+}
+
+// Switch
+
+const errorCode = "one";
+// Application gives an error message to the user depending on the errorCode.
+
+switch (errorCode) {
+  case 0: // if (errorCode === 0) {sonsole.log("Success")}
+    console.log("Success");
+    break;
+  // It is possible to pile up possible inputs
+  case 1:
+  case "1":
+  case "one":
+    console.log("Try again");
+    break;
+  case 2:
+    console.log("File not found");
+    break;
+  default:
+    console.log("Error not valid");
+}
+
+// Ternary Operators
+// true/false statement ? what happens if true : what happens if false;
+
+const points = 16;
+const highScore = 20;
+const isHighScore = points > highScore ? true : false;
+
+// The following two expressions are equivalents:
+
+const userMessage =
+  points > highScore ? "You have a new record!" : "Better luck next time";
+
+if (points > highScore) {
+  console.log("You have a new record!");
+} else {
+  console.log("Better luck next time");
+}

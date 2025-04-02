@@ -1,0 +1,11 @@
+## Challenge: Eye Colour
+
+### MVP:
+
+Tell the user what eye colour their child would have.
+
+1. Create two variables `parent1` and `parent2`
+1. Given the eye colour of each parent, it should console log the probability
+   of their child having different eye colours, for example:
+   `Your eye colours are brown and blue, the chances of your child having blue eyes is --%, brown is --% and green is --%`
+1. Use the following image as a reference
