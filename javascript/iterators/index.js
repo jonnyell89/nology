@@ -94,26 +94,60 @@ console.log("Using built-in .map() method:", nums.map(increment));
 
 const myFunc = (arr) => arr.map((num) => num * 2).filter((num) => num > 10);
 
-// The .join(separator) method
+// The .join(separator) method joins all elements of an array into a single string.
+// Takes an optional separator argument, such as a comma.
+// Converts an array into a string.
 
-// The .every() method -> &&
+const words = ["Hello", "World", "!"];
+console.log(words.join());
+console.log(words.join(" "));
+console.log(words.join("-"));
+
+// The .every() method returns true if all elements satisfy a certain condition -> &&
+// Returns false if any element fails.
+// Checks if all elements match a condition.
+
+const evenNums = [2, 4, 6, 8];
+console.log(evenNums.every((num) => num % 2 === 0));
+console.log(evenNums.every((num) => num > 5));
 
 const allGreaterThanThousand = nums.every((n) => n > 1000);
 console.log("Nums:", nums, allGreaterThanThousand);
 
-// The .some() method -> ||
+// The .some() method returns true if at least one element satisfies a certain condition -> ||
+// Returns false if all elements fail.
+// Checks if at least one element matches a condition.
+
+const oddNums = [1, 3, 5, 7, 9, 11, 13, 15];
+console.log(oddNums.some((num) => num % 2 === 0));
+console.log(oddNums.some((num) => num > 10));
+console.log(oddNums.some((num) => num < 0));
 
 const someGreaterThanThousand = nums.some((n) => n > 1000);
 console.log("Nums:", nums, someGreaterThanThousand);
 
-// The .concat() method
+// The .concat() method combines multiple arrays without modifying the originals.
+// Can also concatenate individual values.
+// Merges arrays without modifying them.
 
-const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const numbersArrayOne = [1, 2, 3, 4, 5];
+const numbersArrayTwo = [13, 14, 15, 16, 17];
 
-console.log(nums.concat(numbersArray));
+console.log(numbersArrayOne.concat(numbersArrayTwo));
+console.log(numbersArrayOne.concat(7, 8, 9));
+console.log(numbersArrayOne);
 
-// The .reduce() method
+console.log(nums.concat(numbersArrayOne));
 
+// The .reduce() method reduces an array to a single value.
+// Takes two arguments: a callback function (accumulator, currentValue) => {}
+// and an initial value for the accumulator.
+// Processes an array into a single value.
+
+const sum = nums.reduce((acc, num) => acc + num, 0);
+console.log(sum);
+
+// Manual implementation of the .reduce() method.
 const reduce = (arr, func, acc) => {
   for (let i = 0; i < arr.length; ++i) {
     acc = func(acc, arr[i]);
@@ -122,7 +156,7 @@ const reduce = (arr, func, acc) => {
 };
 
 console.log(
-  "Using reduce implementation:",
+  "Using manual reduce() implementation:",
   // arr -> nums
   // func -> (acc, n) => acc + n
   // acc -> 0
@@ -143,3 +177,9 @@ export const totalScoresArr = (scoresArr) => {
 };
 
 console.log(totalScoresArr([1, 2, 3, 4]));
+
+// The .forEach() method iterates over an array without creating a new array.
+// Similar to .map() but it does not return anything.
+
+const fruits = ["apple", "banana", "cherry"];
+fruits.forEach((fruit, index) => console.log(`${index + 1}: ${fruit}`));

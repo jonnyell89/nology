@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" src="./src/style.css" />
+    <title>TS Calculator</title>
+  </head>
+  <body>
+    <h1>TS CALCULATOR</h1>
+    <div id="calc" class="calc">
+      <input type="text" id="display" class="calc__display" value="0" />
+      <button class="calc__btn">AC</button>
+      <button class="calc__btn">DEL</button>
+      <button class="calc__btn">%</button>
+      <button class="calc__btn calc__btn--operator">/</button>
+
+      <button class="calc__btn">7</button>
+      <button class="calc__btn">8</button>
+      <button class="calc__btn">9</button>
+      <button class="calc__btn calc__btn--operator">x</button>
+
+      <button class="calc__btn">4</button>
+      <button class="calc__btn">5</button>
+      <button class="calc__btn">6</button>
+      <button class="calc__btn calc__btn--operator">-</button>
+
+      <button class="calc__btn">1</button>
+      <button class="calc__btn">2</button>
+      <button class="calc__btn">3</button>
+      <button class="calc__btn calc__btn--operator">+</button>
+
+      <button class="calc__btn calc__btn--zero">0</button>
+      <button class="calc__btn">.</button>
+      <button id="equal" class="calc__btn calc__btn--equal">=</button>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
