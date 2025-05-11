@@ -1,0 +1,104 @@
+HTTP means Hyper-text Transfer Protocol
+    
+    The language and rules for transfering information across the internet.
+
+    Components of an HTTP message:
+
+        Method:
+
+            GET, POST
+
+        URL: 
+
+            https://example.com
+
+        Headers:
+
+            Authorisation=Bearer my-token
+            Content-type=application/json
+
+        Body:
+
+            {"message": "Hello, world!"}
+
+    Common HTTP methods:
+
+        GET
+
+            Retrieve records from a source
+            Should not have a body
+
+        POST
+
+            Save new records to a source
+
+        DELETE
+
+            Delete records in a source
+
+        PUT
+
+            Rewrite or write data to a source
+
+        PATCH
+
+            Save partial data for existing records in a source
+
+    Status Codes
+
+        Success: 2__
+
+            200: OK
+            201: Created
+            202: Accepted
+            204: No Content
+
+        Client Error: 4__
+
+            400: Bad Request
+            401: Unauthorised -> Authentication
+            403: Forbidden -> Permission
+            404: Not Found
+
+        Server Error: 5__
+
+            500: Interval Server Error
+
+    RESTful Resources
+
+        Representational State Transfer is a standard for creating stateless APIs on top of HTTP.
+
+        Example of a RESTful Resources
+
+            If an API is hosted at example.com resources may have the following "endpoints":
+
+                GET:
+
+                    example.com/customers
+
+                        Lists all customer records
+
+                    example.com/customers/65
+
+                        Gets customer 65's records
+
+                POST:
+
+                    example.com/customers
+
+                        Create new customer record
+
+                DELETE:
+
+                    example.com/customers/65
+
+                        Delete customer record
+
+TCP means Transmission Control Protocol
+
+API means Application Programming Interface
+
+    A set of rules and protocols that allow different software progams to communicate and exchange information with each other.
+
+    Web Browser -> Request -> Internet -> API -> Web Server -> Database
+    Web Browser <- Response <- Internet <- API <- Web Server <- Database
